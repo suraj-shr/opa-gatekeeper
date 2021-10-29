@@ -175,6 +175,17 @@ For the second style of integration with Istio, OPA runs as a sidecar next to ea
 ### Apache Kafka ###
 Apache Kafka is the most popular message broker implementation used in microservices deployments. To use OPA for Kafka authorization, you need to engage the **OPA Authorizer** plugin with Kafka. To authorize a request, the OPA Authorizer plugin talks to a remote OPA server over HTTP.  In a Kubernetes deployment, you would deploy the OPA server as a sidecar along with Kafka on the same Pod.
 
+## **Reference**
+[Microservices Security in Action](https://www.collectionbooks.net/pdf/microservices-security-in-action), Prabath Siriwardena and Nuwan Dias  
+
+## **Informational Resources**
+•	[Core Docs: ](https://www.openpolicyagent.org/docs/latest/)
+
+•	[Ecosystem: ](https://www.openpolicyagent.org/docs/latest/ecosystem/)
+
+•	[Get to Know the Rego language:  ](https://www.openpolicyagent.org/docs/latest/policy-language/)
+
+•	[The Rego Playground: ](https://play.openpolicyagent.org/)
 
 
 
