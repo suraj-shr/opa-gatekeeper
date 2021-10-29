@@ -13,7 +13,7 @@ The OPA engine can run on its own as a standalone deployment or as an embedded l
 # **OPA Policies**
 To define access-control policies, OPA introduces a new declarative language called Rego.  You can find more details about Rego at (http://www.openpolicyagent.org/docs/latest/policy-language/).
 
-## OPA policy written in Rego – example1 ##
+## OPA policy written in Rego – example1 
 package authz.orders.policy1
   
 default allow = false
@@ -41,7 +41,7 @@ allow {
 
 The policy defined above has two allow rules. For an allow rule to return true, every statement within the allow block must return true. The first allow rule returns true only if a user with the manager role is the one doing an HTTP POST on the orders resource. The second allow rule returns true if a user with the dept_manager role is the one doing an HTTP POST on the orders resource under their own department.
 
-## Rego input document with manager role – example1##
+## Rego input document with manager role – example1
 {
    "input"
    :{
@@ -56,7 +56,7 @@ The policy defined above has two allow rules. For an allow rule to return true, 
 
 }
 
-## Rego input document with dept_manager role – example1##
+## Rego input document with dept_manager role – example1
 {
    "input"
    :{
