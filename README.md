@@ -187,6 +187,8 @@ Apache Kafka is the most popular message broker implementation used in microserv
 
 •	[Get to Know the Rego language:  ](https://www.openpolicyagent.org/docs/latest/policy-language/)
 
+•	[Policy Primer - Examples](https://www.openpolicyagent.org/docs/latest/kubernetes-primer/)
+
 •	[The Rego Playground: ](https://play.openpolicyagent.org/)
 
 
