@@ -191,5 +191,7 @@ Apache Kafka is the most popular message broker implementation used in microserv
 
 •	[The Rego Playground: ](https://play.openpolicyagent.org/)
 
+•	[Udemy Training snippet on OPA-Gatekeeper](https://intel.udemy.com/course/certified-kubernetes-security-specialist/learn/lecture/23012476#overview)
+
 
 
