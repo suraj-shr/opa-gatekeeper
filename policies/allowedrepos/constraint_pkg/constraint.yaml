@@ -1,0 +1,17 @@
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sAllowedRepos
+metadata:
+  name: repo-is-caasapproved
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Pod"]
+    namespaces:
+      - "default"
+  parameters:
+    repos:
+      - "amr-registry.caas.intel.com/"
+      - "amr-registry-pre.caas.intel.com/"
+      - "ger-registry.caas.intel.com/"
+      - "ger-registry-pre.caas.intel.com/"

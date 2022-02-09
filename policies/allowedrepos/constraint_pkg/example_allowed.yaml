@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: opa-allowed
+spec:
+  containers:
+    - name: opa-busybox
+      image: amr-registry.caas.intel.com/fiedevops/busybox@sha256:fd4a8673d0344c3a7f427fe4440d4b8dfd4fa59cfabbd9098f9eb0cb4ba905d0
+      args:
+        - "/bin/sh"
+        - "-c"
+        - "sleep 1200 &"      
+      resources:
+        limits:
+          cpu: "100m"
+          memory: "30Mi"
